@@ -1,15 +1,16 @@
 import '../styles/scss/main.scss';
 import { Fragment } from 'react'
 import Header from '../components/header';
-import TabsComponent from '../components/tab';
+import TabsCrew from '../components/tabCrew';
 
 function Crew() {
   return (
     <Fragment>
-      {/* <div>
-        <strong>01 </strong>
-        <strong>Pick your destination</strong>
-      </div> */}
+        <div className='tittle-section'>
+            <strong className='tittle-number'>02 </strong>
+            <strong className='tittle-text'>Meet your crew</strong>
+        </div>
+        <TabsCrew />
     </Fragment>
   )
 }

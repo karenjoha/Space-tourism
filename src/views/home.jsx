@@ -1,7 +1,7 @@
 import '../styles/scss/main.scss';
 import { Fragment } from 'react'
 import Header from '../components/header';
-import TabsComponent from '../components/tab';
+import TabsDestination from '../components/tabDestination';
 
 function Home() {
   return (

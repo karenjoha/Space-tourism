@@ -2,7 +2,7 @@ import "../App.css";
 import { Container, Heading, TabIndicator } from "@chakra-ui/react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 
-function TabsComponentGeneral() {
+function TabsDestinationGeneral() {
   return (
     <Container>
       <Tabs position="relative" variant="unstyled" >
@@ -53,4 +53,4 @@ function TabsComponentGeneral() {
   );
 }
 
-export default TabsComponentGeneral;
+export default TabsDestinationGeneral;
