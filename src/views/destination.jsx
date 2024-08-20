@@ -6,10 +6,6 @@ import TabsDestination from '../components/tabDestination';
 function Destination() {
   return (
     <Fragment>
-        <div className='tittle-section'>
-            <strong className='tittle-number'>01 </strong>
-            <strong className='tittle-text'>PINK YOUR DESTINATION</strong>
-        </div>
         <TabsDestination />
     </Fragment>
   )

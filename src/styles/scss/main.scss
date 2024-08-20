@@ -7,6 +7,57 @@ html, body {
     height: 100%;
   }
 
+  .home-crew {
+    background-image: url("../../../public/crew/background-crew-desktop.jpg");
+    background-size: cover; /* Asegura que la imagen cubra el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex;
+    padding: 0rem 3rem;
+    flex-direction: column; /* Opcional: Ajusta la disposición del contenido interno */
+  }
+
+  .home-destination {
+    background-image: url("../../../public/destination/background-destination-desktop.jpg");
+    background-size: cover; /* Asegura que la imagen cubra el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    // display: flex;
+    padding: 0rem 3rem;
+    flex-direction: column; /* Opcional: Ajusta la disposición del contenido interno */
+    
+    // @media (min-width: 767px) {
+    //   display: flex;
+      
+    // }
+    
+    // @media (max-width: 767px) {
+    //   display: block;
+    
+    // }
+    .information{
+      @media (min-width: 767px) {
+        padding: 0rem 5rem;
+        // display: flex;
+        
+      }
+      @media (max-width: 767px) {
+        display: block;
+        
+      }
+    }
+    .img-destination{
+      @media (min-width: 767px) {
+        width: 27.8rem;
+        
+      }
+      @media (max-width: 767px) {
+        max-width: 100%;
+        height: auto;
+        
+      }
+    }
+  }
   .home-container {
     background-image: url("../../../public/home/background-home-desktop.jpg");
     background-size: cover; /* Asegura que la imagen cubra el contenedor */
@@ -83,6 +134,9 @@ html, body {
         font-size: 6.25rem;
         margin: 0;
         font-family: 'Bellefair Regular';
+        @media (max-width: 767px) {
+          font-size: 3.75rem;
+        }
     }
     p{
         font-size: 1rem;
@@ -92,14 +146,37 @@ html, body {
         margin: 0;
         font-family: 'Bellefair Regular';
     }
-}
+    @media (max-width: 767px) {
+    text-align: center;
+    
+    }
+    
+    @media (max-width: 767px) {
+    display: block;
+    
+    }
+  }
 .img_people{
-    max-height: 35rem;
     margin-bottom: -3rem;
+    @media (min-width: 767px) {
+      height: 35rem;
+      
+    }
+    @media (max-width: 767px) {
+      max-width: 100%;
+      height: auto;
+      
+    }
     // position: absolute;
 }
 .tablistoptions{
     justify-content: flex-end;
+    @media (max-width:768px){
+        justify-content: center;
+        button{
+        padding: 0.5rem;
+      }
+      }
 }
 .tablist{
     // position: absolute;
@@ -124,7 +201,9 @@ html, body {
 }
 .tittle-section{
     padding: 1rem 5rem;
-}
-.information{
-    padding: 0rem 5rem;
+    text-align: left;
+    @media (max-width: 768px) {
+      padding: 0;
+      
+    }
 }
