@@ -1,6 +1,79 @@
-body {
-    background-image: url('../../../public/home/background-home-desktop.jpg');
-}
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .home-container {
+    background-image: url("../../../public/home/background-home-desktop.jpg");
+    background-size: cover; /* Asegura que la imagen cubra el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100vw; /* Ancho completo de la ventana */
+    height: 100vh; /* Alto completo de la ventana */
+    display: flex;
+    flex-direction: column; /* Opcional: Ajusta la disposición del contenido interno */
+  }
+
+  .description-home {
+    width: 450px;
+    height: 382px;
+  //   padding-top: 387px;
+    padding-left: 165px;
+    color: #d0d6f9;
+    h5 {
+      width: 379px;
+      height: 34px;
+      left: 0.5px;
+      font-family: "Barlow Condensed";
+      size: 28px;
+      line-height: 33.6px;
+      letter-spacing: 4.75px;
+      
+    }
+    h1 {
+      width: 445px;
+      height: 172px;
+      top: 58px;
+      font-family: "Bellefair Regular";
+      font-weight: 400;
+      font-size: 150px;
+      line-height: 171.9px;
+      margin: 0;
+    }
+    p {
+      width: 444px;
+      height: 128px;
+      top: 254px;
+      left: 0.5px;
+      font-family: "Barlow";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+    }
+    .explore {
+      display: flex;
+      justify-content: flex-end;
+      // width: 274px;
+      // height: 274px;
+      // top: 495px;
+      // left: 1001px;
+      padding-top: 8rem;
+    }
+    .description{
+      display: flex;
+      justify-content: space-between;
+      width: 80vw;
+    }
+  }
+
+// body {
+//     background-image: url('../../../public/home/background-home-desktop.jpg');
+// }
+
 .tabs-principal{
     display: flex;
     text-align: left;
