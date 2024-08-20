@@ -1,6 +1,8 @@
-body {
-    background-image: url('../../../public/home/background-home-desktop.jpg');
-}
+// body {
+//     background-image: url('../../../public/home/background-home-desktop.jpg');
+// }
+
+
 .tabs-principal{
     display: flex;
     text-align: left;
@@ -54,4 +56,10 @@ body {
 }
 .information{
     padding: 0rem 5rem;
+}
+
+.technology-view{
+    // background-image: url(./public/technology/background-technology-desktop.jpg);
+    width: 100vw;
+    height: 100vh;
 }
