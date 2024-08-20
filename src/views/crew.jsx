@@ -6,10 +6,6 @@ import TabsCrew from '../components/tabCrew';
 function Crew() {
   return (
     <Fragment>
-        <div className='tittle-section'>
-            <strong className='tittle-number'>02 </strong>
-            <strong className='tittle-text'>Meet your crew</strong>
-        </div>
         <TabsCrew />
     </Fragment>
   )

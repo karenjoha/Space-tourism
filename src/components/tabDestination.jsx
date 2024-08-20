@@ -1,11 +1,17 @@
 import "../App.css";
 import { Container, Heading, TabIndicator } from "@chakra-ui/react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import Header from "./header";
 
 function TabsDestination() {
   return (
-    <Container textAlign="-webkit-center">
-      <Tabs position="relative" variant="unstyled" maxWidth="90%">
+    <Container textAlign="-webkit-center" className="home-destination">
+      <Header></Header>
+      <div className='tittle-section'>
+            <strong className='tittle-number'>01 </strong>
+            <strong className='tittle-text'>PINK YOUR DESTINATION</strong>
+      </div>
+      <Tabs position="relative" variant="unstyled">
         <TabList className="tablistoptions">
           <Tab color="white" _hover={{ border: "none" }} _focusWithin={{border: 'none'}}>
             MOON
@@ -14,12 +20,12 @@ function TabsDestination() {
           <Tab color="white">EUROPA</Tab>
           <Tab color="white">TITAN</Tab>
         </TabList>
-        <TabIndicator mt="15px" height="3px" bg="white" />
+        <TabIndicator height="3px" bg="white" />
         <TabPanels>
           <TabPanel >
             <div className="tabs-principal">
               <div >
-                <img src="/destination/image-moon.png" alt="" />
+                <img className="img-destination" src="/destination/image-moon.png" alt="" />
               </div>
               <div className="information">
                 <div>
@@ -42,7 +48,7 @@ function TabsDestination() {
           <TabPanel >
             <div className="tabs-principal">
               <div >
-                <img src="/destination/image-mars.png" alt="" />
+                <img className="img-destination" src="/destination/image-mars.png" alt="" />
               </div>
               <div className="information">
                 <div>
@@ -65,7 +71,7 @@ function TabsDestination() {
           <TabPanel >
             <div className="tabs-principal">
               <div >
-                <img src="/destination/image-europa.png" alt="" />
+                <img className="img-destination" src="/destination/image-europa.png" alt="" />
               </div>
               <div className="information">
                 <div>
@@ -88,7 +94,7 @@ function TabsDestination() {
           <TabPanel >
             <div className="tabs-principal">
               <div >
-                <img src="/destination/image-titan.png" alt="" />
+                <img className="img-destination" src="/destination/image-titan.png" alt="" />
               </div>
               <div className="information">
                 <div>
