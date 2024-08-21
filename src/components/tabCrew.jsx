@@ -1,7 +1,8 @@
 import "../App.css";
-import { Box, Button, Container, Heading, TabIndicator, useMultiStyleConfig, useTab } from "@chakra-ui/react";
+import { Box, Button, Center, Container, Heading, TabIndicator, useMultiStyleConfig, useTab } from "@chakra-ui/react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import React from "react";
+import Header from "./header";
 function TabsCrew() {
   const CustomTab = React.forwardRef((props, ref)  => {
     const tabProps = useTab({...props, ref})
@@ -17,8 +18,13 @@ function TabsCrew() {
     );
   } )
   return(
-    <Container textAlign="-webkit-center">
-      <Tabs maxWidth="90%">
+    <Container textAlign="-webkit-center" className="home-crew">
+      <Header></Header>
+      <div className='tittle-section'>
+            <strong className='tittle-number'>02 </strong>
+            <strong className='tittle-text'>Meet your crew</strong>
+      </div>
+      <Tabs position="relative">
         <TabPanels>
           <TabPanel>
             <div className="tabs-principal">
