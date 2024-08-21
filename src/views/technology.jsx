@@ -7,6 +7,7 @@ import TabsTechnology from '../components/tabTechnology';
 function Technology() {
   return (
     <Fragment>
+      {/* <Header/> */}
       {/* <div>
         <strong>01 </strong>
         <strong>Pick your destination</strong>
