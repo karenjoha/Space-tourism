@@ -8,10 +8,6 @@ function Technology() {
   return (
     <Fragment>
       {/* <Header/> */}
-      {/* <div>
-        <strong>01 </strong>
-        <strong>Pick your destination</strong>
-      </div> */}
       <TabsTechnology />
     </Fragment>
   )
