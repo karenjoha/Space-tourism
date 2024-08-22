@@ -310,10 +310,15 @@ html, body {
     }
 }
 .tittle-section {
-  padding: 1rem 5rem;
+  @media (min-width:768px){
+
+    padding: 1rem 5rem;
+  }
 }
 .information {
-  padding: 0rem 5rem;
+  @media (min-width: 768px) {
+    padding: 0rem 5rem;
+  }
 }
 
 .technology-view {
@@ -358,10 +363,15 @@ html, body {
 }
 .tablist-tec {
   display: flex;
-  flex-direction: column;
   width: 50px;
   align-items: center;
-  transform: translateX(60px) translateY(15rem);
+  @media (min-width:768px){
+    flex-direction: column;
+    transform: translateX(60px) translateY(15rem);
+  }
+  @media (max-width:768px){
+    // flex-flow: row;
+  }
 }
 
 .page-contain {
@@ -430,9 +440,6 @@ html, body {
     margin: 0 auto;
   }
 
-  .tablist {
-    transform: translateX(30px) translateY(10rem);
-  }
 
   .page-contain {
     width: 100%;
@@ -483,10 +490,6 @@ html, body {
     line-height: 20px;
     width: 100%;
     margin: 0 auto;
-  }
-
-  .tablist {
-    transform: translateX(10px) translateY(5rem);
   }
 
   .page-contain {

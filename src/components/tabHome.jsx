@@ -5,7 +5,7 @@ import React from "react";
 
 function TabsHome() {
   return (
-    <Container class="home-container">
+    <Container className="home-container">
         <Header/>
       <div className="description-home">
         <div className="description">

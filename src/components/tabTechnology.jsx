@@ -110,7 +110,7 @@ function TabsTechnology() {
           </TabPanel>
         </TabPanels>
 
-        <TabList className="tablist">
+        <TabList className="tablist-tec">
           <CustomTab></CustomTab>
           <CustomTab></CustomTab>
           <CustomTab></CustomTab>
