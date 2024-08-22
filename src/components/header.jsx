@@ -13,7 +13,7 @@ const Header = () => {
     <header className="header">
       <nav className="navbar">
         <div className="navbar__icon">
-          <img src="../../public/logo.png" alt="logo" />
+          <img src="../../public/Group2.png" alt="logo" />
         </div>
         <div className={`nav_options ${isOpen ? "open" : ""}`}>
           <ul className="navbar__menu">

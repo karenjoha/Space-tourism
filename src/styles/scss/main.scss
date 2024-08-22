@@ -39,22 +39,22 @@ html, body {
 
   .home-crew {
     background-image: url("../../../public/crew/background-crew-desktop.jpg");
-    background-size: cover; /* Asegura que la imagen cubra el contenedor */
-    background-position: center; /* Centra la imagen en el contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
     display: flex;
     padding: 0rem 3rem;
-    flex-direction: column; /* Opcional: Ajusta la disposición del contenido interno */
+    flex-direction: column;
   }
 
   .home-destination {
     background-image: url("../../../public/destination/background-destination-desktop.jpg");
-    background-size: cover; /* Asegura que la imagen cubra el contenedor */
-    background-position: center; /* Centra la imagen en el contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
     // display: flex;
     padding: 0rem 3rem;
-    flex-direction: column; /* Opcional: Ajusta la disposición del contenido interno */
+    flex-direction: column;
     
     // @media (min-width: 767px) {
     //   display: flex;
@@ -90,13 +90,13 @@ html, body {
   }
   .home-container {
     background-image: url("../../../public/home/background-home-desktop.jpg");
-    background-size: cover; /* Asegura que la imagen cubra el contenedor */
-    background-position: center; /* Centra la imagen en el contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    width: 100vw; /* Ancho completo de la ventana */
-    height: 100vh; /* Alto completo de la ventana */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100vw; 
+    height: 100vh; 
     display: flex;
-    flex-direction: column; /* Opcional: Ajusta la disposición del contenido interno */
+    flex-direction: column; 
   }
 
   .description-home {
@@ -137,10 +137,6 @@ html, body {
     .explore {
       display: flex;
       justify-content: flex-end;
-      // width: 274px;
-      // height: 274px;
-      // top: 495px;
-      // left: 1001px;
       padding-top: 8rem;
     }
     .description{
@@ -149,6 +145,85 @@ html, body {
       width: 80vw;
     }
   }
+
+  @media (max-width: 1024px) {
+    .description-home {
+        width: 350px;
+        height: auto;
+        padding-left: 10px;
+    }
+
+    .description-home h5 {
+        width: 300px;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 3px;
+    }
+
+    .description-home h1 {
+        width: 300px;
+        font-size: 100px;
+        line-height: 120px;
+    }
+
+    .description-home p {
+        width: 300px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .description-home .explore {
+        padding-top: 5rem;
+    }
+
+    .description-home .description {
+        width: 90vw;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+  .home-container {
+      background-image: url("../../../public/home/background-home-mobile.jpg"); 
+  }
+
+  .description-home {
+      width: 90%;
+      height: auto;
+      padding-left: 0;
+      text-align: center;
+  }
+
+  .description-home h5 {
+      width: 100%;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 2px;
+  }
+
+  .description-home h1 {
+      width: 100%;
+      font-size: 60px;
+      line-height: 80px;
+  }
+
+  .description-home p {
+      width: 100%;
+      font-size: 14px;
+      line-height: 20px;
+  }
+
+  .description-home .explore {
+      padding-top: 3rem;
+  }
+
+  .description-home .description {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
 
 .tabs-principal{
     display: flex;
@@ -192,7 +267,7 @@ html, body {
       height: auto;
       
     }
-    // position: absolute;
+  
 }
 .tablistoptions{
     justify-content: flex-end;
@@ -241,96 +316,205 @@ html, body {
   padding: 0rem 5rem;
 }
 
-
 .technology-view {
-  background-image: url(./public/technology/background-technology-desktop.jpg);
+  background-image: url(../public/technology/background-technology-desktop.jpg);
   width: 100vw;
-  margin: 0%;
+  margin: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0%;
+  padding: 0;
   position: static;
+}
+.info-container {
+  padding-left: 10rem;
+  display: flex;
+  align-items: center;
+  color: #d0d6f9;
+  width: 100%;
+}
+
+.info-container h5 {
+  font-family: "Barlow Condensed";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.info-container h3 {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64.18px;
+}
+
+.info-container p {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  width: 444px;
+}
+.imageTab {
+  max-height: 35rem;
+}
+.tablist {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  align-items: center;
+  transform: translateX(60px) translateY(15rem);
+}
+
+.page-contain {
+  width: 550px;
+  transform: translateY(-7rem);
+}
+
+.techImage {
+  width: 350.5px;
+  display: flex;
+  text-align: center;
+  align-self: flex-start;
+}
+.techImage img {
+  display: flex;
+  width: 350px;
+  height: auto;
+  transform: translateX(5rem);
+}
+
+.section1 {
+  display: flex;
+  font-family: 'BarlowCondensed';
+}
+
+.number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding-left: 4rem;
+  opacity: 25%;
+}
+
+.space-launch {
+  font-weight: 400;
+  font-size: 28px;
+  padding-left: 26px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+  .technology-view {
+    background-image: url(./public/technology/background-technology-tablet.jpg);
+    background-size: cover;
+  }
 
   .info-container {
-    padding-left: 10rem;
-    display: flex;
-    align-items: center;
-    color: #d0d6f9;
-    width: 4rem;
-
-    h5 {
-      font-family: "Barlow Condensed";
-      size: 1rem;
-      font-weight: 400;
-    }
-
-    h3 {
-      font-family: "Bellefair";
-      font-weight: 400;
-      font-size: 56px;
-      line-height: 64.18px;
-    }
-
-    p {
-      font-family: "Barlow";
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 32px;
-      width: 444px;
-    }
-  }
-
-  .imageTab {
-    max-height: 35rem;
-
-  }
-  .tablist {
-    display: flex;
+    padding-left: 5rem;
     flex-direction: column;
-    width: 50px;
-    align-items: center;
-    transform: translateX(60px);
-    transform: translateY(15rem);
-    translate: 40px;
+    text-align: center;
+  }
+
+  .info-container h5 {
+    font-size: 0.9rem;
+  }
+
+  .info-container h3 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .info-container p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .tablist {
+    transform: translateX(30px) translateY(10rem);
   }
 
   .page-contain {
-    width: 550px;
-    transform: translateY(-7rem);
+    width: 100%;
+    transform: translateY(-5rem);
   }
 
   .techImage {
-    width: 350.5px;
-    display: flex;
-    text-align: center;
-    align-self: self-start;
+    width: 80%;
   }
+
   .techImage img {
-    display: flex;
-    translate: 18rem;
-    width: 350px;
-    height: auto;
-    transform: translateX(5rem);
+    width: 100%;
+    transform: none;
+  }
+
+  .section1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .number, .space-launch {
+    padding-left: 0;
   }
 }
 
-.section1{
-    display: flex;
-    font-family: 'BarlowCondensed';
-    .number{
-        
-        font-size: 28px;
-        font-weight: 700;
-        color: #FFFFFF;
-        padding-left: 4rem;
-        opacity: 25%;
-    }
-    .space-launch{
-        font-weight: 400;
-        font-size: 28px;
-        padding-left: 26px;
-        color: #FFFFFF;
-    }
+@media (max-width: 767px) {
+  .technology-view {
+    background-image: url(./public/technology/background-technology-mobile.jpg); 
+    background-size: cover;
+  }
+
+  .info-container {
+    padding-left: 2rem;
+    text-align: center;
+  }
+
+  .info-container h5 {
+    font-size: 0.8rem;
+  }
+
+  .info-container h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .info-container p {
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .tablist {
+    transform: translateX(10px) translateY(5rem);
+  }
+
+  .page-contain {
+    width: 100%;
+    transform: translateY(-3rem);
+  }
+
+  .techImage {
+    width: 100%;
+  }
+
+  .techImage img {
+    width: 100%;
+    transform: none;
+  }
+
+  .section1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .number, .space-launch {
+    font-size: 20px;
+    padding-left: 0;
+  }
 }
 
-
+.header nav .navbar__icon img{
+  width: 40px;
+  height: 40px;
+}
