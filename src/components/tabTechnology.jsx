@@ -21,7 +21,7 @@ function TabsTechnology() {
         <strong className="space-launch">SPACE LAUNCH 101</strong>
       </div>
       <Tabs position= "relative" variant="unstyled">
-        <TabList className="tablist">
+        <TabList className="tablist-tec">
           <Tab color="white"
       borderRadius="50%"   
       width="50px"         
