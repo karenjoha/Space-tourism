@@ -3,28 +3,59 @@ import "../styles/scss/main.scss"
 import { Box, Button, Container, Heading, TabIndicator, useMultiStyleConfig, useTab, useTabList } from "@chakra-ui/react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import React from "react";
+import Header from "./header";
+import TabsDestination from "./tabDestination";
+
+
 
 function TabsTechnology() {
   const CustomTab = React.forwardRef((props, ref)  => {
     const tabProps = useTabList({...props, ref})
-  //   const isSelected = !!tabProps['aria-selected']
-  //   const styles = useMultiStyleConfig ('Tabs', tabProps)
-  //   // return (
-  //   //   <Button __css={styles.tab} {...tabProps}>
-  //   //     <Box as='span' mr='2'>
-  //   //       {isSelected ? '⚪' : 'O'}
-  //   //     </Box>
-  //   //     {tabProps.children}
-  //   //   </Button>
-  //   // );
+    const isSelected = !!tabProps['aria-selected']
   } )
   return (
     <Container class="technology-view">
-      <Tabs variant="unstyled">
+      <Header/>
+      <div className="section1">
+        <strong className="number">03</strong>
+        <strong className="space-launch">SPACE LAUNCH 101</strong>
+      </div>
+      <Tabs position= "relative" variant="unstyled">
         <TabList className="tablist">
-          <Tab _selected={{ color: "white", bg: "blue.500", borderRadius:"50%"}}>1</Tab>
-          <Tab _selected={{ color: "white", bg: "green.300", borderRadius:"50%"}}>2</Tab>
-          <Tab _selected={{ color: "white", bg: "green.400", borderRadius:"50%"}}> 3</Tab>
+          <Tab color="white"
+      borderRadius="50%"   
+      width="50px"         
+      height="50px"        
+      display="flex"        
+      alignItems="center"   
+      justifyContent="center"
+      backgroundColor={"transparent"}
+      border="2px solid white" 
+      _hover={{  backgroundColor: "transparent", border: "2px solid white" }} // Estilo en hover
+      _focus={{  backgroundColor: "white", border: "2px solid white", color: "black" }} // Estilo en enfoque
+    >1</Tab>
+          <Tab color="white"
+      borderRadius="50%"   
+      width="50px"       
+      height="50px"      
+      display="flex"        
+      alignItems="center"   
+      justifyContent="center"
+      backgroundColor={"transparent"}
+      border="2px solid white" 
+      _hover={{  backgroundColor: "transparent", border: "2px solid white" }} // Estilo en hover
+      _focus={{  backgroundColor: "white", border: "2px solid white", color: "black" }}>2</Tab>
+          <Tab color="white"
+      borderRadius="50%"   
+      width="50px"         
+      height="50px"        
+      display="flex"        
+      alignItems="center"   
+      justifyContent="center"
+      backgroundColor={"transparent"}
+      border="2px solid white" 
+      _hover={{  backgroundColor: "transparent", border: "2px solid white" }} // Estilo en hover
+      _focus={{  backgroundColor: "white", border: "2px solid white", color: "black" }}> 3</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
